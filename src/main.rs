@@ -8,6 +8,5 @@ mod widgets;
 fn main() {
     let config = Config::read();
     ExcusesWidget::run(&config);
-    println!();
     ColorsWidget::run(&config);
 }

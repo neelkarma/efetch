@@ -64,7 +64,7 @@ impl Default for ColorsConfig {
 
 fn get_config_path() -> Result<PathBuf, Error> {
     if let Ok(mut path) = env::var("HOME") {
-        path.push_str("/.config/excuses/config.toml");
+        path.push_str("/.config/efetch/config.toml");
         Ok(PathBuf::from(path))
     } else {
         Err(Error::NoHomeEnvError)
